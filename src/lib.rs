@@ -15,6 +15,7 @@
 #![cfg_attr(feature = "atmega48p", doc = "**atmega48p**,")]
 #![cfg_attr(feature = "atmega64", doc = "**atmega64**,")]
 #![cfg_attr(feature = "atmega644", doc = "**atmega644**,")]
+#![cfg_attr(feature = "attiny10", doc = "**attiny10**,")]
 #![cfg_attr(feature = "attiny13a", doc = "**attiny13a**,")]
 #![cfg_attr(feature = "attiny167", doc = "**attiny167**,")]
 #![cfg_attr(feature = "attiny1614", doc = "**attiny1614**,")]
@@ -51,6 +52,7 @@
 //! `atmega48p`,
 //! `atmega64`,
 //! `atmega644`,
+//! `attiny10`,
 //! `attiny13a`,
 //! `attiny167`,
 //! `attiny1614`,
@@ -199,6 +201,7 @@ compile_error!(
     * atmega644
     * atmega8
     * atmega8u2
+    * attiny10
     * attiny13a
     * attiny167
     * attiny1614
@@ -249,6 +252,8 @@ pub use crate::devices::atmega644;
 pub use crate::devices::atmega8;
 #[cfg(feature = "atmega8u2")]
 pub use crate::devices::atmega8u2;
+#[cfg(feature = "attiny10")]
+pub use crate::devices::attiny10;
 #[cfg(feature = "attiny13a")]
 pub use crate::devices::attiny13a;
 #[cfg(feature = "attiny1614")]
